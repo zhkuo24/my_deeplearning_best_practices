@@ -1,0 +1,30 @@
+# the config of train and test
+[common]
+log_file = true                # use log file or not
+log_file_use_time = false       # set the log file name use time or not
+model_name = "resnet50"           # can be ""
+version = 1                     # record the nums of trials
+use_gpu = true
+seed = 199
+fold_num = 10
+[path]
+log_path = "./logs"
+root_path = "F:\\kaggle\\cassava-leaf-disease-classification"
+weight_path = "./weights"
+
+
+[train]
+resume = false
+epochs = 10
+img_size = 512
+train_bs = 64
+val_bs = 64
+num_workers = 0
+lr = 0.001
+weight_decay = 1e-6
+min_lr = 1e-8
+T_0 = 10
+accum_iter = 2      # suppoprt to do batch accumulation for backprop with effectively larger batch size
+verbose_step = 1
+[test]
+

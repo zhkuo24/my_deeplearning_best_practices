@@ -1,0 +1,6 @@
+PyTorch/pytoch_train_template/.idea
+PyTorch/pytoch_train_template/logs/*
+PyTorch/pytoch_train_template/datas/*
+PyTorch/pytoch_train_template/weights/*
+PyTorch/pytoch_train_template/__pycache__
+PyTorch/pytoch_train_template/utils/__pycache__
